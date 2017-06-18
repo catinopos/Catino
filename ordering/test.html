@@ -1,0 +1,38 @@
+<style>
+#levo {
+  float: left;
+  width: 200px;
+}
+
+#desno {
+  float: right;
+  width: calc(100% - 200px - 5%);
+}
+
+</style>
+
+<h3>Appetizer 2eur</h3>
+<div id="parent">
+  <div id="desno">
+		<p>This appetizer contains bacon, marinated chicken fillet and cheese</p>
+        <h4>Amount</h4>
+		<select name="inputQuantity">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		</select>
+        <br>
+        <h4>Notes (not mandatory)</h4>
+        <textarea rows="1" name="inputDirections"></textarea>
+        <p>Please specify any special requirements for the preparation or delivery, for example. "Without garlic" or "for George." Additional requirements may increase the final price.</p></div>
+  <div id="levo"><img src="img/icon.png" /></div>
+<br>
+	<button class="md-close">ORDER</button>
+</div>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='css/opensans.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.blue.css">
+	<link rel="stylesheet" href="css/izgled.css">
+	<script src="js/modernizr.js"></script>	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>catinoSystem</title>
+
+
+</head>
+<body>
+
+		<div class="md-modal md-effect-18" id="modal-18">
+			<div class="md-content">
+				<h3>Appetizer 2eur</h3>
+				<div id="parent">
+				  <div id="desno">
+						<p>This appetizer contains bacon, marinated chicken fillet and cheese</p>
+						<h4>Amount</h4>
+						<select name="inputQuantity">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						</select>
+						<br>
+						<h4>Notes (not mandatory)</h4>
+						<textarea rows="3" name="inputDirections" style="resize: none;">For example: Without garlic</textarea>
+						<p>Please specify any special requirements for the preparation or delivery.<br> Additional requirements may increase the final price.</p></div>
+				  <div id="levo"><img src="img/icon.png" /></div>
+				<br>
+					<button class="md-close">ORDER</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	<header class="cd-header">
+		<h1>RESTAURANT "CATINO ALPHA"</h1>
+	</header>
+
+	<main class="cd-main-content" class="container">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+						<a data-type="all" href="#0">Foods and drinks</a> <!-- selected option on mobile -->
+					</li> 
+					<li class="filter"><a class="selected" href="#0" data-type="all">Foods and drinks</a></li>
+					<li class="filter" data-filter=".predjelo"><a href="#0" data-type="predjelo">Apetizers</a></li>
+					<li class="filter" data-filter=".sendvic"><a href="#0" data-type="sendvic">Sandwich</a></li>
+					<li class="filter" data-filter=".ham"><a href="#0" data-type="ham">Hamburgers</a></li>
+					<li class="filter" data-filter=".supa"><a href="#0" data-type="supa">Soups</a></li>
+					<li class="filter" data-filter=".dezert"><a href="#0" data-type="dezert">Dezerts</a></li>
+					<li class="filter" data-filter=".pice"><a href="#0" data-type="pice">Drinks</a></li>
+
+				</ul>
+			</div>
+		</div>
+
+		<section class="cd-gallery">
+			<ul>
+				<li class="mix jelo food apetizers starters entrees predjelo slano"><img src="img/predjelo.png" class="md-trigger" data-modal="modal-18"alt="Image 1"></li>
+				<li class="mix jelo food apetizers starters entrees predjelo slatko"><img src="img/predjelo1.png" alt="Image 1"></li>
+				<li class="mix jelo food sendvic sandwich slano"><img src="img/sendvic.png" alt="Image 1"></li>
+				<li class="mix jelo food ham burger hamburger slano"><img src="img/hamburger.png" alt="Image 1"></li>
+				<li class="mix jelo food supa supica soup slano"><img src="img/supa.png" alt="Image 1"></li>
+				<li class="mix jelo food dezert slatko dezert kolacic dessert"><img src="img/kolac.png" alt="Image 1"></li>
+				<li class="mix pice drink beer alkoholno"><img src="img/pivo.png" alt="Image 1"></li>
+				<li class="mix pice juice drink kola koka gazirano bezalkoholno slatko"><img src="img/cola.png" alt="Image 1"></li>
+				<li class="mix pice drink apple prirodni sokic dete bezalkoholno negazirano slatko"><img src="img/sokodjabuke.png" alt="Image 1"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">No results</div>
+		</section> 
+
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>Search...</h4>
+					
+					<div class="cd-filter-content">
+						<input type="search" placeholder="Sweet, cake, small...">
+					</div>
+				</div>
+
+				<div class="cd-filter-block">
+					<h4>I want it to be:</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".slatko" type="checkbox" id="checkbox1">
+			    			<label class="checkbox-label" for="checkbox1">Sweet</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".slano" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">Salty</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".kiselo" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">Soury</label>
+						</li>
+						
+						<li>
+							<input class="filter" data-filter=".gorko" type="checkbox" id="checkbox4">
+							<label class="checkbox-label" for="checkbox4">Bitter</label>
+						</li>	
+
+						<li>
+							<input class="filter" data-filter=".gazirano" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="checkbox5">Carbonated</label>
+						</li>
+						
+						<li>
+							<input class="filter" data-filter=".negazirano" type="checkbox" id="checkbox6">
+							<label class="checkbox-label" for="checkbox6">Non-carbonated</label>
+						</li>						
+						
+						<li>
+							<input class="filter" data-filter=".alkoholno" type="checkbox" id="checkbox7">
+							<label class="checkbox-label" for="checkbox7">Alcoholic</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".bezalkoholno" type="checkbox" id="checkbox8">
+							<label class="checkbox-label" for="checkbox8">Non-Alcoholic</label>
+						</li>												
+					</ul>
+				</div>
+			</form>
+			<a class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+		<a class="cd-filter-trigger">Filters</a>
+	</main>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/main.js"></script>
+<div class="md-overlay"></div>
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+
+
+</body>
+</html>

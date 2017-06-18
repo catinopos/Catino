@@ -1,0 +1,133 @@
+:root {
+    --accent: #0070A9;
+    --shadows: rgba(0, 112, 169, 1);
+	--sftshadows: rgba(0, 112, 169, 0.5);
+    --font: #488cff;
+    --dark: #1A1A1A;
+	--vrydark: #131313;
+    --light: #ffffff;
+}
+
+body{
+	background-color: var(--dark) !important;	
+}
+
+.cd-tab-filter-wrapper {
+    background-color: var(--dark) !important;
+    box-shadow: 0 1px 1px var(--shadows) !important;
+    z-index: 1;
+}
+.cd-tab-filter a.selected {
+    background: transparent;
+    color: var(--accent);
+    box-shadow: inset 0 -2px 0 #FFFFFF;
+}
+.cd-gallery .cd-fail-message {
+	color: var(--accent);
+    display: none;
+    text-align: center;
+}
+
+.cd-filter .cd-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  width: 60px;
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-align: center;
+  background: var(--dark)
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  z-index: 3;
+}
+
+.cd-filter-block .checkbox-label::before {
+  /* shared style for input elements */
+  font-family: "Open Sans", sans-serif;
+  border-radius: 0;
+  background-color: var(--dark);
+  border: 2px solid var(--light);
+}
+
+.cd-filter-block input[type=checkbox]:checked + label::before {
+  border-color: var(--accent);
+  background-color: var(--dark);
+}
+
+.cd-filter-trigger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  line-height: 50px;
+  width: 60px;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  color: transparent;
+  white-space: nowrap;
+  background: transparent url("../img/cd-icon-filter-blue.svg") no-repeat center center;
+  z-index: 3;
+}
+
+.cd-filter-block input[type='search'],
+.cd-filter-block input[type='text'],
+.cd-filter-block select {
+  width: 100%;
+  padding: .8em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  color: var(--accent);
+}
+
+.cd-filter-block input[type='search']:focus,
+.cd-filter-block input[type='text']:focus,
+.cd-filter-block select:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: var(--accent);
+}
+
+.cd-filter::before {
+  /* top colored bar */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: var(--vrydark);
+  z-index: 2;
+}
+
+.cd-filter.filter-is-visible {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    box-shadow: 4px 4px 20px var(--sftshadows);
+}
+
+.cd-gallery li {
+  margin-bottom: 1.6em;
+  box-shadow: 0 2px 2px var(--shadows);
+  display: none;
+}
+
+.cd-header {
+  position: relative;
+  height: 150px;
+  background: url("../img/pozadina.dark.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
